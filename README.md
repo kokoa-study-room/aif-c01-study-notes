@@ -1,4 +1,29 @@
-# AWS Certified AI Practitioner (AIF-C01) Exam Study Notes
+# AWS Certified AI Practitioner (AIF-C01)  
+### Exam Study Notes & Prep Guidance
+
+These are my personal study notes for the **AWS Certified AI Practitioner (AIF-C01)** exam.
+
+This is a **foundational-level certification**, comparable in difficulty to **AWS Certified Cloud Practitioner (CLF-C02)** — but focused specifically on **AI, ML, and Generative AI on AWS**.
+
+The exam is **high-level and conceptual**, covering:
+
+- Core AI and GenAI terminology  
+- Responsible AI basics  
+- AWS AI/ML services at a conceptual level  
+- Simple use-case matching  
+
+## Study Time
+
+If you already have basic AWS familiarity, this is realistically **one focused weekend of study**.
+
+## Preparation
+
+The following is sufficient to pass:
+
+- The free **AWS Skill Builder course** (~15 hours — easily completed faster at 1.25x–1.5x speed)
+- The free official **AWS practice questions** (which felt slightly harder than the real exam)
+
+No deep technical experience or advanced architecture knowledge is required.
 
 ## Useful Links
 - [Official Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
