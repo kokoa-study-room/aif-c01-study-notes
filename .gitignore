@@ -1,0 +1,69 @@
+# ===========================
+# AIF-C01 학습 시스템 산출물 · 개인 데이터
+# ===========================
+
+# 빌드 산출물 (build_bank.py 로 언제든 재생성 가능)
+questions/system/bank.json
+
+# 개인 학습 진도 (사용자별 상태이므로 공유 대상 아님)
+questions/system/progress.json
+
+# 자동 축적되는 오답 노트 (사용자별 학습 기록)
+questions/system/wrong-log.md
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 가상 환경
+.venv/
+venv/
+env/
+ENV/
+
+# ===========================
+# macOS
+# ===========================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ===========================
+# 에디터·IDE
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.claude/
+.aider*
+
+# ===========================
+# 환경 변수·비밀
+# ===========================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ===========================
+# 백업·임시 파일
+# ===========================
+*.backup
+*.backup.*
+*.bak
+*.tmp
+*.log
