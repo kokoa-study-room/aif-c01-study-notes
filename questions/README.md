@@ -15,28 +15,28 @@
 
 ## 도메인 배분 (Domain Distribution)
 
-공식 Exam Guide의 도메인 비중을 그대로 반영합니다.
+공식 Exam Guide의 도메인 비중을 그대로 반영합니다. **AWS 공식 문서를 근거로 한 확장 문항 12개(Q401~Q412)가 추가되어 있습니다.**
 
-| 도메인 | 비중 | 문항 수 | 디렉토리 |
-|--------|------|---------|----------|
-| **Domain 1**: AI/ML 기초 (Fundamentals of AI and ML) | 20% | **80** | [`domain-1-fundamentals-of-ai-ml/`](domain-1-fundamentals-of-ai-ml/) |
-| **Domain 2**: 생성형 AI 기초 (Fundamentals of Generative AI) | 24% | **96** | [`domain-2-fundamentals-of-genai/`](domain-2-fundamentals-of-genai/) |
-| **Domain 3**: 파운데이션 모델 응용 (Applications of Foundation Models) | 28% | **112** | [`domain-3-applications-of-foundation-models/`](domain-3-applications-of-foundation-models/) |
-| **Domain 4**: 책임 있는 AI (Guidelines for Responsible AI) | 14% | **56** | [`domain-4-responsible-ai/`](domain-4-responsible-ai/) |
-| **Domain 5**: 보안/컴플라이언스/거버넌스 (Security, Compliance, Governance) | 14% | **56** | [`domain-5-security-compliance-governance/`](domain-5-security-compliance-governance/) |
-| **합계** | 100% | **400** | |
+| 도메인 | 비중 | 기본 문항 | 확장 (AWS 문서 기반) | 총계 | 디렉토리 |
+|--------|------|-----------|-----|------|----------|
+| **Domain 1**: AI/ML 기초 (Fundamentals of AI and ML) | 20% | 80 | **+6** (Q401~Q406, Transcribe Custom Vocabulary) | **86** | [`domain-1-fundamentals-of-ai-ml/`](domain-1-fundamentals-of-ai-ml/) |
+| **Domain 2**: 생성형 AI 기초 (Fundamentals of Generative AI) | 24% | 96 | **+6** (Q407~Q412, SageMaker JumpStart FM) | **102** | [`domain-2-fundamentals-of-genai/`](domain-2-fundamentals-of-genai/) |
+| **Domain 3**: 파운데이션 모델 응용 (Applications of Foundation Models) | 28% | 112 | — | 112 | [`domain-3-applications-of-foundation-models/`](domain-3-applications-of-foundation-models/) |
+| **Domain 4**: 책임 있는 AI (Guidelines for Responsible AI) | 14% | 56 | — | 56 | [`domain-4-responsible-ai/`](domain-4-responsible-ai/) |
+| **Domain 5**: 보안/컴플라이언스/거버넌스 (Security, Compliance, Governance) | 14% | 56 | — | 56 | [`domain-5-security-compliance-governance/`](domain-5-security-compliance-governance/) |
+| **합계** | 100% | **400** | **+12** | **412** | |
 
 ## 태스크 스테이트먼트별 세부 배분 (Task Statement Breakdown)
 
-### Domain 1: Fundamentals of AI and ML (80문항)
+### Domain 1: Fundamentals of AI and ML (86문항)
 - **1.1** Explain basic AI concepts and terminologies — 30문항
-- **1.2** Identify practical use cases for AI — 25문항
+- **1.2** Identify practical use cases for AI — 25 + **6 확장** (Q401~Q406, Amazon Transcribe Custom Vocabulary) = **31문항**
 - **1.3** Describe the ML development lifecycle — 25문항
 
-### Domain 2: Fundamentals of Generative AI (96문항)
+### Domain 2: Fundamentals of Generative AI (102문항)
 - **2.1** Explain the basic concepts of generative AI — 32문항
 - **2.2** Understand capabilities and limitations of GenAI for business — 32문항
-- **2.3** Describe AWS infrastructure and technologies for GenAI apps — 32문항
+- **2.3** Describe AWS infrastructure and technologies for GenAI apps — 32 + **6 확장** (Q407~Q412, SageMaker JumpStart Foundation Models) = **38문항**
 
 ### Domain 3: Applications of Foundation Models (112문항)
 - **3.1** Design considerations for FM-based applications — 28문항
@@ -67,11 +67,11 @@
 | Domain | Task | 생성 완료 | 목표 | 상태 |
 |--------|------|-----------|------|------|
 | 1 | 1.1 | 30 | 30 | ✅ 완료 |
-| 1 | 1.2 | 25 | 25 | ✅ 완료 |
+| 1 | 1.2 | **31** (25 + 6 확장) | 25 | ✅ 완료 + 🆕 확장 |
 | 1 | 1.3 | 25 | 25 | ✅ 완료 |
 | 2 | 2.1 | 32 | 32 | ✅ 완료 |
 | 2 | 2.2 | 32 | 32 | ✅ 완료 |
-| 2 | 2.3 | 32 | 32 | ✅ 완료 |
+| 2 | 2.3 | **38** (32 + 6 확장) | 32 | ✅ 완료 + 🆕 확장 |
 | 3 | 3.1 | 28 | 28 | ✅ 완료 |
 | 3 | 3.2 | 28 | 28 | ✅ 완료 |
 | 3 | 3.3 | 28 | 28 | ✅ 완료 |
@@ -80,15 +80,26 @@
 | 4 | 4.2 | 28 | 28 | ✅ 완료 |
 | 5 | 5.1 | 28 | 28 | ✅ 완료 |
 | 5 | 5.2 | 28 | 28 | ✅ 완료 |
-| **합계** | | **400** | **400** | **🎉 100%** |
+| **합계** | | **412** | **400** | **🎉 100% + 12 확장** |
 
-### 정답 분포 (최종 400문항 기준)
-- **A: 102 (25.5%)** · **B: 99 (24.75%)** · **C: 100 (25.0%)** · **D: 98 (24.5%)** · 복수정답(A,C): 1
-- **완벽한 균등 분포** (편차 < 1%)
-- Domain 1 (80): A=20, B=19, C=22, D=18, (A,C)=1
-- Domain 2 (96): A=B=C=D=24 완전 균등
-- Domain 3 (112): A=29, B=28, C=27, D=28
-- Domain 4 (56): A=15, B=14, C=13, D=14
-- Domain 5 (56): A=14, B=14, C=14, D=14
+### 정답 분포 (최종 412문항 기준)
+- **기본 400문항** 정답 분포:
+  - **A: 102 (25.5%)** · **B: 99 (24.75%)** · **C: 100 (25.0%)** · **D: 98 (24.5%)** · 복수정답(A,C): 1
+  - **완벽한 균등 분포** (편차 < 1%)
+  - Domain 1 (80): A=20, B=19, C=22, D=18, (A,C)=1
+  - Domain 2 (96): A=B=C=D=24 완전 균등
+  - Domain 3 (112): A=29, B=28, C=27, D=28
+  - Domain 4 (56): A=15, B=14, C=13, D=14
+  - Domain 5 (56): A=14, B=14, C=14, D=14
+- **확장 12문항** 정답 분포:
+  - Q401~Q406 (Transcribe Custom Vocabulary, Domain 1.2): A=1, B=4, C=1, D=0
+  - Q407~Q412 (SageMaker JumpStart FM, Domain 2.3): A=2, B=4, C=0, D=0
+
+### 🆕 확장 문항 소스 (AWS 공식 문서)
+
+확장 12문항(Q401~Q412)은 다음 AWS 공식 문서를 근거로 새롭게 작성되었습니다:
+
+- [Custom vocabularies — Amazon Transcribe Developer Guide](https://docs.aws.amazon.com/transcribe/latest/dg/custom-vocabulary.html)
+- [Amazon SageMaker JumpStart Foundation Models — Amazon SageMaker Developer Guide](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models.html)
 
 > **다음 배치 요청 방법**: "다음 배치" 또는 "Domain 2 시작" 같이 요청하시면 이어서 작성합니다.
